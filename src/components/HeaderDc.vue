@@ -9,7 +9,6 @@
                 </li>   
             </ul>
         </div>
-       
     </header>
 </template>
 
@@ -77,13 +76,11 @@ header{
         align-items: center;
         width: 1100px;
     }
-   
     img{
         width: 55px;
     }
     li {
         display: inline-block;
-
         a{
             text-decoration: none;
             padding: 0 15px;
@@ -92,8 +89,6 @@ header{
             font-weight: 550;
         }
     }
-  
-    
 }
 
 

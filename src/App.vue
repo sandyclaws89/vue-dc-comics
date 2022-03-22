@@ -2,19 +2,22 @@
   <div id="app">
     <HeaderDc/>
     <BlackHeader/>
+    <BlueHeader/>
   </div>
 </template>
 
 <script>
-import BlackHeader from './components/BlackHeader.vue'
-
 import HeaderDc from './components/HeaderDc.vue'
+import BlackHeader from './components/BlackHeader.vue'
+import BlueHeader from './components/BlueHeader.vue'
+
 
 export default {
   name: 'App',
   components: {
         HeaderDc,
-        BlackHeader
+        BlackHeader,
+        BlueHeader,
     },
 }
 </script>
