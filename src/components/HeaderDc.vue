@@ -70,31 +70,29 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-li {
-    display: inline-block;
-
-    a{
-        text-decoration: none;
-        padding: 0 15px;
-        font-size: .8rem;
-        color: black;
-        font-weight: 550;
-    }
-};
-
 header{
     height: 10vh;
-    background-color:red ;
     div{
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
-        width: 80%;
-        background-color: green;
+        width: 1100px;
     }
+   
     img{
         width: 55px;
     }
+    li {
+        display: inline-block;
+
+        a{
+            text-decoration: none;
+            padding: 0 15px;
+            font-size: .8rem;
+            color: black;
+            font-weight: 550;
+        }
+    }
+  
     
 }
 

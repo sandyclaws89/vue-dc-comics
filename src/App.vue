@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-   <HeaderDc/>
-    
+    <HeaderDc/>
+    <BlackHeader/>
   </div>
 </template>
 
 <script>
+import BlackHeader from './components/BlackHeader.vue'
 
 import HeaderDc from './components/HeaderDc.vue'
 
 export default {
   name: 'App',
   components: {
-        HeaderDc
+        HeaderDc,
+        BlackHeader
     },
 }
 </script>
 
-<style lang= "scss">
+
+    BlackHeader<style lang= "scss">
   @import "./assets/styles/style.scss";
 </style>
