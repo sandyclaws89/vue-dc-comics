@@ -1,12 +1,15 @@
 <template>
 <!-- NEL TEMPLATE CI METTO TUTTO IL MIO HTML.  -->
-    <header>
-        <img src="../assets/img/dc-logo.png" alt="">
-        <ul>
-            <li v-for="(element, index) in links" :key="index">
+    <header class="flex">
+        <div class="container flex">
+                <img src="../assets/img/dc-logo.png" alt="">
+            <ul class="inline">
+                <li v-for="(element, index) in links" :key="index">
                 <a :href="element.href">{{element.text}} </a>
-            </li>   
-        </ul>
+                </li>   
+            </ul>
+        </div>
+       
     </header>
 </template>
 
@@ -67,12 +70,33 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 li {
     display: inline-block;
+
     a{
         text-decoration: none;
+        padding: 0 15px;
+        font-size: .8rem;
+        color: black;
+        font-weight: 550;
     }
 };
+
+header{
+    height: 10vh;
+    background-color:red ;
+    div{
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        background-color: green;
+    }
+    img{
+        width: 55px;
+    }
+    
+}
 
 
 </style>

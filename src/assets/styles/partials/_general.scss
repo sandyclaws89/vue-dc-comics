@@ -1,8 +1,12 @@
 .container{
-    width: 900px;
-    background-color: aquamarine;
+    width: 1000px;
+   
     margin: auto;
 }
 .flex{
     display: flex;
+}
+
+.inline{
+    display: inline;
 }
