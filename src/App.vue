@@ -1,28 +1,27 @@
 <template>
   <div id="app">
     <HeaderDc/>
-    <BlackHeader/>
-    <BlueHeader/>
+    <BannerTop/>
+    <BlueList/>
   </div>
 </template>
 
 <script>
 import HeaderDc from './components/HeaderDc.vue'
-import BlackHeader from './components/BlackHeader.vue'
-import BlueHeader from './components/BlueHeader.vue'
+import BannerTop from './components/BannerTop.vue'
+import BlueList from './components/BlueList.vue'
 
 
 export default {
   name: 'App',
   components: {
         HeaderDc,
-        BlackHeader,
-        BlueHeader,
+        BannerTop,
+        BlueList,
     },
 }
 </script>
 
-
-    BlackHeader<style lang= "scss">
-  @import "./assets/styles/style.scss";
-</style>
+  <style lang= "scss">
+    @import "./assets/styles/style.scss";
+  </style>

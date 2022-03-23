@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: 'BlueHeader',
+    name: 'BlueList',
     data () {
         return {
             categories :[
