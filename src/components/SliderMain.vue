@@ -104,7 +104,7 @@ export default {
 <style>
 .comics-max-container{
     background-color: black;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     height: 60vh;
     text-align: center;
 

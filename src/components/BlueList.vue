@@ -1,15 +1,17 @@
 <template>
-  <header class="flex">
+  <div class="flex main-container">
         <div class="container flex"> 
             <ul class="inline">
                 <li v-for="(element, index) in categories" :key="index">
-                <a :href="element.href">{{element.text}} 
-                    <!-- <img src{{element.img}} alt=""> -->
+                <a :href="element.href">
+                    <img :src="element.img" alt="">
+                    <!-- /*FIXME:SISTEMA IMG*/ -->
+                    <span>{{element.text}}</span>
                 </a>
                 </li>   
             </ul>
         </div>
-    </header>
+    </div>
 </template>
 
 <script>
@@ -17,30 +19,30 @@ export default {
     name: 'BlueList',
     data () {
         return {
-            categories :[
+           categories :[ 
             {
                 img: "../assets/img/buy-comics-digital-comics.png",
                 text: 'DIGITAL COMICS',
                 link: '#',
             },
-             {
-                img: "../assets/img/buy/buy-comics-digital-comics.png",
-                text: 'DIGITAL COMICS',
+            {
+                img: "../assets/img/buy-comics-digital-comics.png",
+                text: 'DC MERCHANDISE',
                 link: '#',
             },
              {
-                img: "../assets/img/buy/buy-comics-digital-comics.png",
-                text: 'DIGITAL COMICS',
+                img: "../assets/img/buy-comics-digital-comics.png",
+                text: 'SUBSCRIPTION',
                 link: '#',
             },
              {
-                img: "../assets/img/buy/buy-comics-digital-comics.png",
-                text: 'DIGITAL COMICS',
+                img: "../assets/img/buy-comics-digital-comics.png",
+                text: 'COMIC SHOP LOCATOR',
                 link: '#',
             },
              {
-                img: "../assets/img/buy/buy-comics-digital-comics.png",
-                text: 'DIGITAL COMICS',
+                img: "../assets/img/buy-comics-digital-comics.png",
+                text: 'DC POWER VISA',
                 link: '#',
             },
             ]
@@ -50,8 +52,10 @@ export default {
 </script>
 
 <style  scoped lang="scss">
-header{
+.main-container{
     height: 10vh;
+    background-color: blue;
+    justify-content: space-around
     div{
         justify-content: space-between; 
         align-items: center;
@@ -61,10 +65,14 @@ header{
         display: inline-block;
         a{
             text-decoration: none;
-            padding: 0 15px;
-            font-size: .8rem;
-            color: black;
+        }
+        img{
+            height: 35%;
+        }
+        span{
+             color: black;
             font-weight: 550;
+            display: inline;
         }
     }
 }

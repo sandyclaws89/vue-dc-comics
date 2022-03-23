@@ -3,14 +3,14 @@
     <HeaderDc/>
     <BannerTop/>
     <SliderMain/>
-    <!-- <BlueList/> -->
+    <BlueList/>
   </div>
 </template>
 
 <script>
 import HeaderDc from './components/HeaderDc.vue'
 import BannerTop from './components/BannerTop.vue'
-// import BlueList from './components/BlueList.vue'
+import BlueList from './components/BlueList.vue'
 import SliderMain from './components/SliderMain.vue'
 
 
@@ -19,7 +19,7 @@ export default {
   components: {
         HeaderDc,
         BannerTop,
-        // BlueList,
+        BlueList,
         SliderMain,
     },
 }
