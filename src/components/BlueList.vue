@@ -1,8 +1,8 @@
 <template>
   <div class="flex main-container">
         <div class="container flex"> 
-            <ul class="inline">
-                <li v-for="(element, index) in categories" :key="index">
+            <ul>
+                <li v-for="(element, index) in categories" :key="index" class="inline">
                 <a :href="element.href">
                     <img :src="element.img" alt="">
                     <!-- /*FIXME:SISTEMA IMG*/ -->
@@ -55,9 +55,8 @@ export default {
 .main-container{
     height: 10vh;
     background-color: blue;
-    justify-content: space-around
     div{
-        justify-content: space-between; 
+        justify-content: space-around; 
         align-items: center;
         width: 1100px;
     }
