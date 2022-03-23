@@ -1,9 +1,7 @@
 <template>
-    <header class="flex">
-        <div>
-           BANNER IMG  
+        <div class="flex">
+           <img src="../assets/img/jumbotron.jpg" alt="" >
         </div>
-    </header>
 </template>
 
 <script>
@@ -13,15 +11,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    header{
-        height: 40vh;
-        background-color:black;
-        justify-content: center;
-        align-items: center; 
+   
+        
         div{
-            color: white;  
+            width: 100%;
+            justify-content: center;
+            align-items: center; 
+            img{
+                height: 40vh;            
+                width: 100vw;
+                object-fit: fill;
+            }
         }
-}
+
 
 
 </style>

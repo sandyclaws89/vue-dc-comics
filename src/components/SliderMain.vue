@@ -1,6 +1,6 @@
 <template>
   <div>
-     <SliderMain 
+     <CardComic
      v-for="(comic, index) in comics" :key="index"
     :comic-img ="comic.thumb"
     :comic-type ="comic.series"/> 
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CardComic from './components/CardComic.vue'
+import CardComic from './CardComic.vue'
 
 export default {
     name: 'SliderMain',
