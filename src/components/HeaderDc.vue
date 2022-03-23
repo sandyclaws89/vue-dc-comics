@@ -78,6 +78,7 @@ header{
     }
     img{
         width: 55px;
+        height: 55px;
     }
     li {
         display: inline-block;

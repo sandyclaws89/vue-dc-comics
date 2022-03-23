@@ -1,10 +1,14 @@
 <template>
-  <div>
-     <CardComic
-     v-for="(comic, index) in comics" :key="index"
-    :comic-img ="comic.thumb"
-    :comic-type ="comic.series"/> 
-
+  <div class="comics-max-container relative">
+    <div class=" container flex comics-container">
+      <CardComic
+      v-for="(comic, index) in comics" :key="index"
+      :comic-img ="comic.thumb"
+      :comic-type ="comic.series"/> 
+    </div>
+    <button>
+      LOAD MORE
+    </button>
   </div>
 </template>
 
@@ -98,5 +102,25 @@ export default {
 </script>
 
 <style>
+.comics-max-container{
+    background-color: black;
+    margin-bottom: 50px;
+    height: 60vh;
+    text-align: center;
 
+}
+  .comics-container{
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  button{ /* FIXME:SISTEMARE CON FLEX */
+    margin-top: 50px;
+    padding: 10px 50px;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    /* position: absolute; */
+  }
 </style>
