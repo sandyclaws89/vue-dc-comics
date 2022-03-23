@@ -2,14 +2,14 @@
   <div>
      <SliderMain 
      v-for="(comic, index) in comics" :key="index"
-    :comic-img = "comic.thumb"
-    :comic-type = "comic.series" /> 
+    :comic-img ="comic.thumb"
+    :comic-type ="comic.series"/> 
 
   </div>
 </template>
 
 <script>
-import CardComic from './components/cardComic.vue'
+import CardComic from './components/CardComic.vue'
 
 export default {
     name: 'SliderMain',
@@ -93,8 +93,8 @@ export default {
     },
     components: {
       CardComic
-  },
-}
+  }
+} 
 </script>
 
 <style>
