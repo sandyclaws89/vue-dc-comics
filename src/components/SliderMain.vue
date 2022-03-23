@@ -93,7 +93,7 @@ export default {
     },
     components: {
       CardComic
-  }
+    }
 } 
 </script>
 
